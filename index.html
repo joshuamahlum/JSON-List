@@ -114,7 +114,6 @@ table tr:nth-child(even) {
 "Country" : "Poland"
 }
 ]
-
 </script>
 <script>
 var xmlhttp = new XMLHttpRequest();
@@ -146,6 +145,13 @@ function myFunction(response) {
     document.getElementById("id01").innerHTML = out;
 }
 </script>
+
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
 
 </body>
 </html>
