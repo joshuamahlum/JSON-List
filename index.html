@@ -39,6 +39,35 @@ table tr:nth-child(even) {
       </tr>
     </tbody>
   </table>
+<script>
+angular.module('F1FeederApp.controllers', []).
+controller('driversController', function($scope) {
+    $scope.driversList = [
+      {
+          Driver: {
+              givenName: 'Sebastian',
+              familyName: 'Vettel'
+          },
+          points: 322,
+          nationality: "German",
+          Constructors: [
+              {name: "Red Bull"}
+          ]
+      },
+      {
+          Driver: {
+          givenName: 'Fernando',
+              familyName: 'Alonso'
+          },
+          points: 207,
+          nationality: "Spanish",
+          Constructors: [
+              {name: "Ferrari"}
+          ]
+      }
+    ];
+});
+</script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="js/app.js"></script>
